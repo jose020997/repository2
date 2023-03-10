@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de HTML</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+
+	<nav th:replace="cabezera.html :: header"></nav>
+	
+    <div class="container">
+        </br>
+        <div class="row">	
+			
+			
+			<div class="col-md-5">
+			</br></br>
+			<h2>Registro Taller Jose</h2>
+			</br></br>
+			    <img src="./img/login.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+			
+			</div>
+			<div class="col-md-1">
+			
+			</div>
+			<div class="col-md-5">
+			    </br>  		
+			    <div class="card">
+			            <div class="card-header">
+			                Formulario de registro
+			            </div>
+			        <div class="card-body">
+			             <form method="post" action="/registro">
+					        <div class="form-group">
+					          <label>Nombre:</label>
+					          <input type="text" class="form-control" id="nombre" name="nombre">
+					        </div><br>
+					        
+					        <div class="form-group">
+					          <label>Contraseña:</label>
+					          <input type="password" class="form-control" name="contraseña">
+					        </div><br>
+					        
+					        <div class="form-group">
+					          <label >Contraseña:</label>
+					          <input type="password" class="form-control" name="contraseña2">
+					        </div><br>
+					        
+					        <div class="form-group">
+					          <label>Correo:</label>
+					          <input type="text" class="form-control" name="correo">
+					        </div><br>
+					        
+					        <button type="submit" class="btn btn-primary">Aceptar</button>
+					      </form>
+			        </div>
+			    </div>
+			</div>   
+			<div class="col-md-1">
+			</div>
+		</div>
+	</div>
+	<div th:replace="pie.html :: footer"></div>
+	
+</body>
+</html>

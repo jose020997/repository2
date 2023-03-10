@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de HTML</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+
+	<nav th:replace="cabezera.html :: header"></nav>
+
+		<div class="container">
+        </br>
+        <div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+			    <h1 class="display-3">Pagina Web Taller</h1></br>
+			    <p class="lead">Jose Antonio Barrios García</p>
+			    <hr class="my-2">
+			    <p>Esta es una pagina web un poco mas avanzada para aplicar mis conociemientos de Java para la asginatura de Ingenieria, vamos a usar thymleaf y spring</p> </br>
+			    <a href="https://github.com/jose020997" target="_blanck">Enlace a mi Github</a>
+			</div>
+		</div>
+	<div th:replace="pie.html :: footer"></div>
+	
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de HTML</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+
+	<nav th:replace="cabezera.html :: header"></nav>
+	
+    <div class="container">
+        </br>
+        <div class="row">
+			<h2>Unos de nuestros servicios más demandados son:</h2> <br><br><br>
+			<div class="col-md-4">
+			    <div class="card">
+			        <img class="card-img-top" src="./img/aceite.jpg" alt="cambio aceite" height="200">
+			        <div class="card-body">
+			                <h4 class="card-title">Cambio de aceite</h4>
+			        </div>
+			    </div>
+			</div>
+			
+			<div class="col-md-4">
+			    <div class="card">
+			        <img class="card-img-top" src="./img/averia.jpg" alt="averias" height="200">
+			        <div class="card-body">
+			                <h4 class="card-title">Averias para coches y motos</h4>
+			        </div>
+			    </div>
+			</div>    
+			
+			<div class="col-md-4">
+			    <div class="card">
+			        <img class="card-img-top" src="./img/itv.jpg" alt="itv" height="200">
+			        <div class="card-body">
+			                <h4 class="card-title">Preparación para la ITV</h4>
+			        </div>
+			    </div>
+			</div>    
+			</br>
+			
+			    Estos son unos de nuestros serivicios, ante cualquier dura siempre puedes consultarnos accediento a tu perfil de usuario, si no tienes uno 
+			    siempre puedes registrarte en nuestra web para empezar a gestionar los servicios, ademas ahora mismo tenemos descuentos para ti, somos especialistas
+			    desde 1990.</br>Somos unos de los mejores talleres a nivel europeo, ante cualquier averia tenemos los mejores expertos para poder solucionar
+			    los problemas de tu vehiculo. Accede al siguiente enlace.
+			    <br>
+			    <div class="col-md-10">
+			    </div>
+			    <div class="col-md-2">
+			        </br>
+			        <a name="" id="" class="btn btn-primary" href="index.html" role="button">Comienza ahora</a>
+			    </div>
+		</div>
+	</div>
+	
+	
+	<div th:replace="pie.html :: footer"></div>
+	
+</body>
+</html>

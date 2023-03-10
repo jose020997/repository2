@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de HTML</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+
+	<nav th:replace="cabezera.html :: header"></nav>
+	
+	<div class="container">
+        </br>
+        <div class="row">
+			<div class="col-md-4">
+			    <div class="card">
+			        <div class="card-header">
+			            Inicio Sesion
+			        </div>
+			        <div class="card-body">
+						<form method="post" action="/login">
+					        <div class="form-group">
+					          <label>Nombre:</label>
+					          <input type="text" class="form-control" name="nombre">
+					        </div>
+					        <div class="form-group">
+					          <label>Contraseña:</label>
+					          <input type="password" class="form-control" name="contraseña">
+					        </div><br>
+					        <button type="submit" class="btn btn-primary">Aceptar</button>
+					      </form>
+			
+			        </div>
+			    </div>
+			</div>
+			
+		<div class="col-md-8">
+
+		<div class="card bg-light mb-3">
+		  	<div class="card-header">Moto más rapida</div>
+		  	<div class="card-body">
+		    	<h4 class="card-title">Kawasaki Ninja H2R</h4>
+		    	<p class="card-text">Kawasaki Ninja H2R La Kawasaki Ninja H2R, solo válida para circuito llega con un motor sobrealimentado que ofrece una potencia de 310 CV ofreciendo al piloto la posibilidad de llegar a la ultra-velocidad . Diseño compacto, motor potente y aceleración máxima, increíbles prestaciones para la nueva Ninja H2R. </p>
+		    	<img src="./img/moto.jpg" width="450" height="300" alt="">
+			</div>
+			</div>
+		
+		 	<div class="card bg-light mb-3" >
+			  	<div class="card-header">Uno de los coches mas bonitos</div>
+			  	<div class="card-body">
+			    	<h4 class="card-title">Huracán STO</h4>
+			    	<p class="card-text">El nuevo Lamborghini Huracán STO (Super Trofeo Omologata) ha sido presentado en España solo tres meses después de ser desvelado a nivel mundial. El superdeportivo de la marca, desarrollado en base a la experiencia de Lamborghini Squadra Corse en competición, ha visitado los lugares más icónicos de las ciudades de Barcelona y Madrid</p>
+			    	<img src="./img/coche.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+				</div>
+				</div>
+		
+				<div class="card bg-light mb-3">
+				  	<div class="card-header">3 mejores vehiculos 2022</div>
+				  	<div class="card-body">
+				    	<h4 class="card-title">Toyota Motor Corporation</h4>
+					        <p class="card-text">Fue fundada en 1933 por Toyoda Kiichiro. Es una de las empresas líderes en la fabricación de automóviles, con fábricas en todo el mundo.</br>
+					        En 2017 fue reconocida como la fábrica con el valor de marca más alto. En gran parte esto se debe a que se trata de una empresa que desde sus orígenes no ha parado de crecer, explorar nuevos horizontes y ofrecer productos sólidos.</br>
+					        Entre las características más destacadas de esta compañía deberíamos señalar que a través de sus coches han intentado introducir una forma de entender la tecnología y aplicarla a nuestra vida realmente innovadora.</p>
+				    	<h4 class="card-title">Mitsubishi Group</h4>
+					        <p class="card-text">es una empresa japonesa con representación en diversos campos de la industria y el comercio japonés. Fue fundada en 1870 por Iwasaki Yatarō. Su importancia en la historia de Japón es de suma relevancia, ya que contribuyó con la expansión industrial del país.</br>
+					        En lo que respecta a su división automotriz, Mitsubishi, se trata de una de las primeras empresas en involucrarse seriamente en este mercado, consiguiendo una relevancia contundente. Al día de hoy, esta división es controlada por el grupo Nissan</p>
+				   		<h4 class="card-title">BMW</h4>
+					        <p class="card-text">fue fundada en 1916 por Camillo Castiglioni, Karl Rapp y Franz Josef Popp, y es una conocida marca de coches de lujo y bicicletas.</br>
+					        En el mercado automovilístico de gama alta es una de las empresas que se destaca, compitiendo directamente con prestigiosos nombres como Volvo, Audi y Mercedes-Benz.</br>
+					        Debemos señalar que fueron los primeros en fabricar y comercializar una bicicleta, y posteriormente se volvieron sumamente conocidos por sus motores para aviones.</p>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+				
+		<div th:replace="pie.html :: footer"></div>
+	
+</body>
+</html>
+

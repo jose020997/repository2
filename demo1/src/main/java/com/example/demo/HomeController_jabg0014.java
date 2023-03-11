@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,9 @@ import jakarta.servlet.http.HttpSession;
 @Controller
 public class HomeController_jabg0014 {
 
+	@Autowired
+	private ServicioJabg0014Interface dao;
+	
 	@GetMapping("/")
 	public String principal() {
 		 return "index.html";
@@ -41,10 +45,10 @@ public class HomeController_jabg0014 {
 	@PostMapping("/login")
 	public String logearse(HttpServletRequest req, Model model, HttpServletResponse response) {
 		HttpSession sesion = req.getSession();
-	     String nombre = req.getParameter("nombre");
-	     String pass = req.getParameter("contraseña");
+	    String nombre = req.getParameter("nombre");
+	    String pass = req.getParameter("contraseña");
 	     
-	     Usuario_jabg0014 usuario = new Usuario_jabg0014(nombre, pass);
+	    Usuario_jabg0014 usuario = new Usuario_jabg0014(nombre, pass);
 		
 		return "Usuario";
 	}
